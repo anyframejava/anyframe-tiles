@@ -1,4 +1,4 @@
-/* Copyright 2002-2010 the original author or authors.
+/* Copyright 2002-2012 the original author or authors.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,11 +14,11 @@
  */
 package org.anyframe.tiles;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.apache.tiles.TilesApplicationContext;
 import org.apache.tiles.factory.AbstractTilesContainerFactory;
 import org.apache.tiles.startup.AbstractTilesInitializer;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.util.StringUtils;
 
 
@@ -29,7 +29,7 @@ import org.springframework.util.StringUtils;
  */
 public class Servlet24ELTilesInitializer extends AbstractTilesInitializer {
     
-    protected final Log logger = LogFactory.getLog(getClass());
+    protected final Logger logger = LoggerFactory.getLogger(getClass());
     
     private String[] definitions;
     
@@ -37,9 +37,7 @@ public class Servlet24ELTilesInitializer extends AbstractTilesInitializer {
         this.definitions = definitions;
         if (definitions != null) {
             String defs = StringUtils.arrayToCommaDelimitedString(definitions);
-            if (logger.isInfoEnabled()) {
-                logger.info("TilesConfigurer: adding definitions [" + defs + "]");
-            }
+            logger.info("TilesConfigurer: adding definitions [{}]", defs);
         }
      }
  

@@ -74,7 +74,7 @@
 	            	<th><label for="releaseDate"><spring:message code="movie.releaseDate" /></label></th>
 	                <td>
 	                <form:input path="releaseDate" cssClass="w_date"  maxlength="10" />
-	                <a class="underline_none" href="javascript:popUpCalendar(document.movieForm.releaseDate, 'yyyy-mm-dd');">
+	                <a class="underline_none" href="javascript:popUpCalendar(document.movieForm.releaseDate, '-');">
 	                	<img id="calendar" src="<c:url value='sample/images/btn_calendar_i.gif'/>" alt="Calendar" />
 	                </a>
 	                <form:errors path="releaseDate" cssClass="errors" /></td>
