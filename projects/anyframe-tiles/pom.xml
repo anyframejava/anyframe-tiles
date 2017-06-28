@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>org.anyframe</groupId>
 	<artifactId>anyframe-tiles</artifactId>
-	<version>1.0.3</version>
+	<version>1.0.3.RC1</version>
 	<packaging>jar</packaging>
 
 	<dependencies>
@@ -62,7 +62,7 @@
         <dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
-			<version>1.2.16</version>
+			<version>1.2.15</version>
 		</dependency>
 		<dependency>
             <groupId>org.slf4j</groupId>

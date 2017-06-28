@@ -86,9 +86,7 @@
 	            <tr>
 	            	<th><label for="nowPlaying"><spring:message code="movie.nowPlaying" /></label></th>
 	                <td><span class="float_left"><spring:message code="movie.isNowPlaying" /></span>
-	                <span class="float_left margin_left5"><form:checkbox id="nowPlaying" path="nowPlaying" value="Y" /></span>
-	                <input type="hidden" name="!nowPlaying" value="N" />
-	                </td>
+	                <span class="float_left margin_left5"><form:checkbox id="nowPlaying" path="nowPlaying" value="Y" /></span></td>
 	            </tr>
 	        </tbody>
 	    </table>
