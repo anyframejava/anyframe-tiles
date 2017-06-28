@@ -7,7 +7,7 @@
 	<groupId>org.anyframe.plugin</groupId>
 	<artifactId>anyframe-tiles-pi</artifactId>
 	<packaging>war</packaging>
-	<version>1.1.0</version>
+	<version>1.1.1-SNAPSHOT</version>
 	<name>tiles</name>
 	
 	<dependencies>
@@ -15,7 +15,7 @@
 		<dependency>
 			<groupId>org.anyframe</groupId>
 			<artifactId>anyframe-tiles</artifactId>
-			<version>1.1.0</version>
+			<version>1.1.1-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.tiles</groupId>
@@ -77,7 +77,7 @@
 		<dependency>
 			<groupId>org.anyframe</groupId>
 			<artifactId>anyframe-core</artifactId>
-			<version>1.6.0</version>
+			<version>1.6.1-SNAPSHOT</version>
 		</dependency>		
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -297,7 +297,7 @@
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>anyframe-maven-plugin</artifactId>
-				<version>2.3.0</version>
+				<version>2.3.1-SNAPSHOT</version>
 				<dependencies>
 					<dependency>
 						<groupId>hsqldb</groupId>
